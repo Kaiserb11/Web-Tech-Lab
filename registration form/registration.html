@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section id = "card">
+    <header class = "card-title">
+        Registration Form
+    </header>
+
+    <div class="row">
+        <div class="column">
+            <div class="col-item1">
+                <div class="col-text">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="usrname">
+                </div>
+                <div class="col-text">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" name="email">
+                </div>
+                <div class="col-text">
+                    <label for="password">Password</label>
+                </div>
+                <div class="col-box">
+                    <input type="password" name="pass">
+                </div>
+                <div class="col-text">
+                    <label for="password">Confirm Password</label>
+                </div>
+                <div class="col-box">
+                    <input type="password" name="conpass">
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="column">
+            <div class = "centerBlock">
+
+                <div class="col-text">
+                    <label for="birthday">Date of Birth</label>
+                </div>
+                <div class="col-box-date">
+                    <input type="date" id="birthday" name="birthday" style="font-size: 15x">
+                </div>
+                <div class="col-text" style="padding-top: 20px;">
+                    <label for="lang">Languages Known</label>
+                </div>
+                <div class="row" style="padding-top: 20px;">
+                    <input type="checkbox" id="language1" name="language1" value="hindi">
+                    <label for="language1"> Hindi</label>
+                    <input type="checkbox" id="language2" name="language2" value="eng" style="margin-left: 10px;">
+                    <label for="language2"> English</label>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="language3" name="language3" value="tamil">
+                    <label for="language3"> Tamil</label>
+                    <input type="checkbox" id="language4" name="language4" value="tlgu">
+                    <label for="language4"> Telegu</label>
+                </div>
+                <div class="col-text" style="padding-top: 20px;">
+                    <label for="gender">Gender</label>
+                </div>
+                <div class="row" style="padding-top: 20px;">
+                    <input type="radio" id="gender1" name="gender1" value="male">
+                    <label for="gender1"> Male</label>
+                    <input type="radio" id="gender2" name="gender2" value="female">
+                    <label for="gender2"> Female</label>
+                </div>
+                <div class = "col-sub" style="display: flex; justify-content: center; padding-top: 50px;">
+                    <input type="submit" value="Submit">
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <div class="column">
+            <div class = "col-item3">
+
+                <div class="col-text">
+                    <label for="phone">Phone Number</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" id="phone" name="phone" maxlength="10" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+                </div>
+                <div class="col-text" style="padding-top: 10px;">
+                    <label for="address">Address</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" id="add1" name="add1">
+                </div>
+                <div class="col-box">
+                    <input type="text" id="add2" name="add2">
+                </div>
+                <div class="col-text" style="padding-top: 10px; padding-bottom: 4px;">
+                    <label for="zip">Zip-Code</label>
+                </div>
+                <div class="col-box">
+                    <input type="text" id="zip" name="zip" maxlength="6" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+                </div> 
+            </div>
+        </div>
+      </div>
+
+</section>
+
+</body>
+</html>
