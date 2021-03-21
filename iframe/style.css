@@ -2,13 +2,13 @@
 body {
   font-family: 'Poppins';
   background-color: #e5f8e7;
-  padding-top: 50px;
+  padding-top: 70px;
   padding-left: 150px;
   padding-right: 150px;
 }
 
 section#card {
-  background: #ffffff;
+  
   height: 550px;
   padding-left: 20px;
   padding-right: 20px;
@@ -43,5 +43,6 @@ section#card .column .ele {
 
 section#card .column p {
   font-size: small;
+  
 }
 /*# sourceMappingURL=style.css.map */
