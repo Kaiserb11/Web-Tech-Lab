@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>jQuery</title>
+</head>
+<style>
+    body {
+        background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    }
+
+    .story1 {
+        background: rgb(2, 0, 36);
+        background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgb(250, 227, 25) 0%, rgb(255, 171, 45) 100%);
+    }
+
+    .story2 {
+        background: rgb(2, 0, 36);
+        background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgb(183, 73, 205) 0%, rgb(153, 0, 115) 100%);
+    }
+</style>
+
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mx-3 data">Latest News</h2>
+            </div>
+            <div class="col-md-2"><button class="btn btn-danger" id="val" onclick="fade()">Next Story</button></div>
+            <div class="col-md-2">
+                <button class="btn btn-primary" id="show">Slide Down Image</button>
+                <button class="btn btn-primary" id="hide">Slide Up Image</button>
+            </div>
+            <div class="col-md-2"><button class="btn btn-info" id="message">Hover Me</button></div>
+        </div>
+        <div class="story1 my-3 p-5">
+            <h4>20 Covid Patients Dead At Delhi Hospital</h4>
+            Jaipur Golden Hospital is the second hospital in Delhi to sent SOS over shortage of oxygen this morning.
+
+
+            New Delhi: Twenty people died last night at the Jaipur Golden Hospital in Delhi due to shortage of medical
+            oxygen, a top
+            official at the hospital said today, highlighting the worsening situation in the national capital's
+            hospitals.
+            "We had been allotted 3.5 metric tons of oxygen from the government. The supply was to reach us by 5 in the
+            evening, but
+            it reached around midnight. By then, 20 patients had died," Dr. DK Baluja, Medical Director at Jaipur Golden
+            Hospital,
+            told NDTV.
+            Earlier Moolchand hospital, in a tweet, appealed for urgent help from Prime Minister Narendra Modi, Chief
+            Minister
+            Arvind Kejriwal and Lt Governor Anil Baijal. More than 130 Covid patients are on life support, it stressed.
+            "Urgent sos help. We have less than 2 hours of oxygen supply @Moolchand_Hos. We are desperate have tried all
+            the nodal
+            officer numbers but unable to connect. Have over 135 COVID pts with many on life support #. @ArvindKejriwal
+            @CMODelh
+            i@LtGovDelhi @satinderjain26 @PMOIndia (sic)," read the tweet put out by Moolchand Healthcare this morning.
+            The hospital
+            has stopped admitting new patients till it resolves the issue, sources said.
+            <div id="image">
+                <img class="img-fluid mx-auto my-3"
+                    src="https://d33ljpvc0tflz5.cloudfront.net/dims3/MMH/38fe5a2/2147483647/strip/true/crop/6720x4375+0+0/resize/768x500!/quality/75/?url=https%3A%2F%2Fd26ua9paks4zq.cloudfront.net%2F7e%2F70%2Faced0aa9483ebc1ac0c7f1fbf8f8%2Fgettyimages-1255590983.jpg"
+                    alt="Story1" style="min-width: 90%;">
+            </div>
+        </div>
+        <div class="story2 my-3 p-5">
+            <h2>IPL 2021: Something is missing in our batting line-up, says Rohit Sharma</h2>
+            Not surprisingly then the opposition bowling attacks have varied their pace, bowling a healthy percentage of
+            slower
+            balls and cutters banged on hard lengths. Against Hardik especially, bowlers have cut down on pace and
+            challenged his
+            ego. The Mumbai batter has fallen more than once for the bait, going for the big hits straightaway and
+            ending up paying
+            the price with his wickets. His highest score in this IPL has been 15 in five innings.
+
+            The failure of the Pandya brothers, including Krunal, who has failed to play to the situation, has added
+            pressure on
+            Pollard, who usually can be dangerous when there is a good partnership going. While Sharma had shrugged off
+            the batting
+            failure after losing the tournament opener against the Royals Challengers, on Friday he conceded that Mumbai
+            top order
+            had to change their batting approach and strategy.
+
+            <div id="image">
+                <img class="img-fluid mx-auto my-3"
+                    src="https://static.toiimg.com/thumb/msid-82226086,imgsize-49233,width-400,resizemode-4/82226086.jpg"
+                    alt="Story2">
+            </div>
+        </div>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script>
+        $(document).ready(() => {
+            $('.story2').hide();
+            $('#show').hide();
+        })
+        $('#hide').click(() => {
+            $('#image').slideUp()
+            $('#show').toggle();
+            $('#hide').toggle();
+            $('.data').fadeOut();
+        })
+        $('#show').click(() => {
+            $('#image').slideDown()
+            $('#show').toggle();
+            $('#hide').toggle();
+            $('.data').fadeIn();
+        })
+        $('#message').hover(() => {
+            alert("Are you Enjoying Our Stories? ");
+            $('#message').hide();
+        });
+        function fade() {
+            $('.story1, .story2').fadeToggle();
+        }
+    </script>
+</body>
+
+</html>

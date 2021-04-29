@@ -1,0 +1,36 @@
+body{
+position: relative;
+top: 20vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url(“http://www.example.com/images/demo.jpg”);
+background-size: cover;}
+.container{
+text-align: center;
+box-sizing: border-box;}
+input{
+font-size: 20px;
+height: 40px;
+width: 300px;
+border-radius: 1cm;
+padding-left: 15px;
+outline: none;}
+table{
+margin: auto;
+margin-top: 20px;}
+button{
+background: linear-gradient(to right, #7ecf5e, #d0ee62);
+color: white;
+height: 60px;
+width: 60px;
+border-radius: 25px;
+font-size: 25px;
+outline: none;}
+.calc{
+color: white;
+display: inline-block;
+background-color: rgb(178, 55, 235);
+border-radius: 1cm;
+padding: 10px;
+padding-bottom: 35px;}
